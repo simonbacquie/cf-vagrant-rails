@@ -5,6 +5,7 @@
 
 ##.gitignore
     .vagrant
+    cookbooks/
 
 ## Once inside the VM
     git config core.filemode false
