@@ -1,3 +1,5 @@
+# Setup
+
 Make sure VirtualBox and Vagrant are installed before proceeding.
 
 ### From Windows Git Bash prompt
@@ -8,6 +10,11 @@ Make sure VirtualBox and Vagrant are installed before proceeding.
 ### Change directory to your Rails project folder from in Git Bash
     cd projects
     cd my_rails_project
+    
+### Copy files from this repo into your Rails project folder
+    Vagrantfile
+    Cheffile
+These contain a pre-made configuration for the Virtual Machine we're about to build.
 
 ### Add to .gitignore in Rails project
     .vagrant
@@ -36,3 +43,12 @@ The `ls` command should show list your Rails project's files.
     bundle exec rails server
     
 Inside a browser in Windows, go to http://localhost:3000, and you should see a webpage served up from your Rails app!
+
+# Working with Vagrant VMs
+
+Virtual Machines are like a another computer running inside your computer. As such, you have to start it up and shut it down like an actual computer. You can start it up by cd-ing into your project folder and running:
+    vagrant up
+Once the VM is running, you can connect to it and get a command line with:
+    vagrant ssh
+You can shut down the machine with:
+    vagrant halt
