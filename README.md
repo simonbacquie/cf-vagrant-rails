@@ -9,6 +9,7 @@ Make sure VirtualBox and Vagrant are installed before proceeding.
     
 ### Change directory to your Rails project folder from in Git Bash
 This goes for wherever your project folder is:
+
     cd my_rails_project
     
 ### Copy files from this repo into your Rails project folder
