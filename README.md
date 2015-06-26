@@ -37,6 +37,8 @@ This connects to the VM and gives you a command prompt in the Linux environment.
     git config --global user.email johndoe@example.com
     gem install bundler
     
+The VM doesn't know anything about the name and email you might already have set up with Git on the Windows side. We have to do it again on the Linux side. The filemode bit is so that Git on the Linux side doesn't think every file in your project has been "modified" due to permissions. Bundler is supposed to come preinstalled with this VM but it isn't working right now--no matter, it's fast and easy to install manually.
+    
 ### Go to your project folder from within the VM
     cd /vagrant
     ls
