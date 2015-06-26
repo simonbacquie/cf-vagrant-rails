@@ -46,9 +46,14 @@ Inside a browser in Windows, go to http://localhost:3000, and you should see a w
 
 # Working with Vagrant VMs
 
-Virtual Machines are like a another computer running inside your computer. As such, you have to start it up and shut it down like an actual computer. You can start it up by cd-ing into your project folder and running:
+Virtual Machines are like a another computer running inside your computer. As such, you have to start it up and shut it down like an actual computer. You can start it up by using cd to get into your project folder (from a Windows prompt) and running:
+
     vagrant up
 Once the VM is running, you can connect to it and get a command line with:
+
     vagrant ssh
 You can shut down the machine with:
+
     vagrant halt
+
+You'll want to shut down the VM when not working on development stuff, as it consumes a lot of memory and will slow down your machine/use up battery life.
