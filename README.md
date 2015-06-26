@@ -25,8 +25,10 @@ This step is very important. Without this, you'll likely end up with a huge (5 G
 ### From Git Bash in Rails project folder
     vagrant up
 Wait while Ubuntu, Ruby, etc. are installed... you'll see a lot of text.
+
     vagrant ssh
 This connects to the VM and gives you a command prompt in the Linux environment. The prompt should look something like:
+
     vagrant@vagrant-ubuntu-trusty-64
 
 ### Once inside the VM
